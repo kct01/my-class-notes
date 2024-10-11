@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      <i>Thank you for taking time to participte in this survey!</i>
+    </p>
+    <form id="survey-form">
+      <div id="name">
+        <lable id="name">Name</lable>
+        <input type="text" id="name" placeholder="Jane doe" required/>
+      </div>
+
+        <div id="email">
+            <lable id="email">Email</lable>
+            <input type="text" id="email" placeholder="Your Email" required/>
+        </div>
+
+        <div>
+        <lable id="number">Phone Number</lable>
+        <input type="text" id="number" placeholder="(1)423-626-6262" min-attribute="11" max-attribute="11"/>
+        </div>
+        <div>
+            <lable for="role">Describe your role</lable>
+            <select name="role" id="role">
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+                <option value="looking for work">Looking for work</option>
+                <option value="stay at home parent">Stay at home parent</option>
+            </select>
+        </div>
+        <div>
+            <p>Are you satisfied with your situation?</p>
+                <lable for="satisfied">Yes</lable>
+                <input type="radio" id="yes">
+                <lable for="satisfied">No</lable>
+                <input type="radio" id="no">
+            
+        </div>
+        <div>
+            <p>Are you happy with your current life? </p>
+            <lable for="are you happy">Yes</lable>
+            <input type="checkbox" id="yes">
+            <lable for="are you happy">No</lable>
+            <input type="checkbox" id="no"> 
+            <lable for="are you happy" id="sometimes">Sometimes</lable>
+            <input type="checkbox" id="sometimes">
+        </div>
+        <div>
+        <lable for="additional comments" id="additional comments">Additional Comments</lable>
+        <input type="textarea" id="comments">
+        </div>
+        <div>
+            <lable for="submit" id="submit">Submit</lable>
+            <input type="submit" id="submit">
+        </div>
+
+    </form>
+    </main>
+  </body>
 </html>

@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Advanced HTML text: Task 2</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
 
-      h1 {
-        font-size: 2rem;
-        margin: 0;
-        color: purple;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>Advanced HTML text: Task 2</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-      p {
-        margin: 0.5em 0;
-      }
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: purple;
+    }
 
-      abbr, time {
-        color: green;
-      }
-    </style>
-  </head>
+    p {
+      margin: 0.5em 0;
+    }
 
-  <body>
+    abbr,
+    time {
+      color: green;
+    }
+  </style>
+</head>
 
-    <h1>Advanced text semantics</h1>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1 id="first header">Advanced text semantics</h1>
+      </header>
+      <p>Let's start with a quote:</p>
+    </article>
+    <article>
+      <h2 id="second header">HTML</h2>
+      <p>
+        <q>
 
-    <p>Let's start with a quote:</p>
-
-    <p>HTML, Hypertext Markup Language is by default accessible, if used correctly.</p>
-
-    <p>CSS can also be used to make web pages more, or less, accessible.</p>
-
-    <p>Chemical Formulae: H2O (Water), C2H6O (Ethanol).</p>
-
-    <p>Dates: December 25th 2019 (Christmas Day), November 2nd 2019 (Día de los Muertos).</p>
-
-  </body>
+          Hypertext Markup Language is by default accessible, if used
+          correctly
+        </q>
+      </p>
+    </article>
+    <article>
+      <details>
+        <summary>CSS</summary>
+        <p> can also be used to make web pages <b>more</b> or <small>less</small> accesable.
+      </details>
+      </p>
+    </article>
+    <article>
+      <p>
+      <ul>
+        <li>Chemical formula:H<sub>2</sub>O (water)</li>
+        <li>C<sup>2</sup>H<sup>6</sup>O (Ethanol)</li>
+      </ul>
+      </p>
+    </article>
+    <P>
+    <h2 id="fourth title">Dates</h2>
+    <ul>
+      <li> <time>December 25th 2019</time> (Christmas Day)</li>
+      <li><time>November 2nd 2019</time> (Día de los
+        Muertos)</li>
+    </ul>
+  </main>
+</body>
 
 </html>
